@@ -29,13 +29,56 @@
         메뉴
       </button>
       <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
-        <a href="#about">소개</a>
-        <a href="#education">교육·훈련</a>
-        <a href="#field">현장 품질혁신</a>
-        <a href="#award">품질기술경영대상</a>
-        <a href="#archive">자료·출판</a>
-        <a href="#ai">AI Quality</a>
-        <a href="#join">회원가입</a>
+        <div class="nav-item">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">소개</button>
+          <div class="nav-panel">
+            <a href="#about">미션 · 비전</a>
+            <a href="#values">핵심가치</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">교육·훈련</button>
+          <div class="nav-panel">
+            <a href="#edu-cert">품질관리기술사 입문·심화 과정</a>
+            <a href="#edu-corp">중소·대기업 품질 실무 과정</a>
+            <a href="#edu-ai">AI 기반 품질혁신 과정</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">현장 품질혁신</button>
+          <div class="nav-panel">
+            <a href="#field">플랫폼 소개</a>
+            <a href="#field-checklist">진단 · 컨설팅 · 코칭</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">품질기술경영대상</button>
+          <div class="nav-panel">
+            <a href="#award-qpem">품질기술경영대상(QPEM)</a>
+            <a href="#award-academic">품질기술 학술상</a>
+            <a href="#award-ai">AI 품질혁신상</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">자료·출판</button>
+          <div class="nav-panel">
+            <a href="#archive-paper">품질기술 논문</a>
+            <a href="#archive-tech">품질기법 자료실</a>
+            <a href="#archive-column">품질기술사 칼럼</a>
+            <a href="#archive-bible">품질기술사 바이블</a>
+            <a href="#archive-youtube">QPESK YouTube</a>
+            <a href="#archive-case">우수사례 아카이브</a>
+          </div>
+        </div>
+        <a class="nav-link nav-link--plain" href="#ai">AI Quality</a>
+        <div class="nav-item">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">회원가입</button>
+          <div class="nav-panel">
+            <a href="#join-lifetime">평생회원</a>
+            <a href="#join-regular">정회원</a>
+            <a href="#join-associate">준회원</a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -104,7 +147,7 @@
         </div>
       </section>
 
-      <section class="values section-band">
+      <section id="values" class="values section-band">
         <div class="section-heading">
           <p class="eyebrow">Core Values</p>
           <h2>현장, 데이터, 네트워크를 하나의 실행 체계로 연결합니다</h2>
@@ -138,17 +181,17 @@
           </p>
         </div>
         <div class="program-grid">
-          <article>
+          <article id="edu-cert">
             <span>기술사 준비</span>
             <h3>품질관리기술사 입문·심화 과정</h3>
             <p>품질경영, 통계적 품질관리, 신뢰성, 생산시스템, 면접 대비와 합격자 사례를 연결합니다.</p>
           </article>
-          <article>
+          <article id="edu-corp">
             <span>기업 교육</span>
             <h3>중소·대기업 품질 실무 과정</h3>
             <p>불량 저감, 공정능력, 협력사 품질, 고객 클레임, 표준화와 개선 실행을 다룹니다.</p>
           </article>
-          <article>
+          <article id="edu-ai">
             <span>AI Quality</span>
             <h3>AI 기반 품질혁신 과정</h3>
             <p>SPC, FMEA, APQP, 스마트팩토리 데이터를 AI 예측과 현장 의사결정으로 연결합니다.</p>
@@ -168,7 +211,7 @@
             성과검증, 코칭 업무를 수행합니다. 필요한 경우 외부전문가와 프로젝트별로
             협업하여 고객 만족과 실질 성과를 창출합니다.
           </p>
-          <ul class="check-list">
+          <ul id="field-checklist" class="check-list">
             <li>Ax-QPEM 모델 진단 및 문제점 도출</li>
             <li>현장 중심 개선과 QCD 성과 연결</li>
             <li>전략 자문기구와 프로젝트형 전문가 그룹 운영</li>
@@ -186,15 +229,15 @@
             <img src="https://qpesk.com/wp-content/uploads/2026/06/QPEM260616.png" alt="QPEM 품질기술경영 모델">
           </div>
           <div class="award-list">
-            <article>
+            <article id="award-qpem">
               <h3>품질기술경영대상(QPEM)</h3>
               <p>기업의 품질우선 가치 상승과 품질기술경영 모델의 현장 적용을 장려합니다.</p>
             </article>
-            <article>
+            <article id="award-academic">
               <h3>품질기술 학술상</h3>
               <p>품질기술 관련 논문, 연구, 실증사례를 발굴해 지식 기반을 넓힙니다.</p>
             </article>
-            <article>
+            <article id="award-ai">
               <h3>AI 품질혁신상</h3>
               <p>Ax 시대에 맞춰 데이터와 AI를 활용한 품질혁신 사례를 별도 트랙으로 키웁니다.</p>
             </article>
@@ -208,27 +251,27 @@
           <h2>논문, 기술자료, 에세이, 유튜브, 품질기술사 바이블을 한곳에</h2>
         </div>
         <div class="archive-grid">
-          <a href="#">
+          <a id="archive-paper" href="#archive-paper">
             <strong>품질기술 논문</strong>
             <span>회원 연구논문, 발표자료, 학술대회 자료</span>
           </a>
-          <a href="#">
+          <a id="archive-tech" href="#archive-tech">
             <strong>품질기법 자료실</strong>
             <span>SPC, FMEA, APQP, QSS, COQ, 안전품질</span>
           </a>
-          <a href="#">
+          <a id="archive-column" href="#archive-column">
             <strong>품질기술사 칼럼</strong>
             <span>현장 경험과 품질철학, 방향성 에세이</span>
           </a>
-          <a href="#">
+          <a id="archive-bible" href="#archive-bible">
             <strong>품질기술사 바이블</strong>
             <span>향후 교재 발간과 교육자료 연계</span>
           </a>
-          <a href="#">
+          <a id="archive-youtube" href="#archive-youtube">
             <strong>QPESK YouTube</strong>
             <span>강의, 세미나, 인터뷰, 현장 사례 영상</span>
           </a>
-          <a href="#">
+          <a id="archive-case" href="#archive-case">
             <strong>우수사례 아카이브</strong>
             <span>기업 개선 사례와 품질기술경영대상 수상자료</span>
           </a>
@@ -264,17 +307,17 @@
           </p>
         </div>
         <div class="membership">
-          <article>
+          <article id="join-lifetime">
             <h3>평생회원</h3>
             <strong>600,000원</strong>
             <p>다양한 플랫폼과 사업에 우선 참여하고, 네트워크 확장과 개인 홍보 기회를 얻습니다.</p>
           </article>
-          <article>
+          <article id="join-regular">
             <h3>정회원</h3>
             <strong>연회비 50,000원 / 입회비 50,000원</strong>
             <p>플랫폼, 사업, 커뮤니티에 참여하며 평생회원 전환이 가능합니다.</p>
           </article>
-          <article>
+          <article id="join-associate">
             <h3>준회원</h3>
             <strong>품질관리기술사 자격 보유자</strong>
             <p>오픈 채널을 통해 정보를 공유하고, 정회원 또는 평생회원 전환을 안내받습니다.</p>
