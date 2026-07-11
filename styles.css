@@ -86,14 +86,67 @@ a {
   font-weight: 700;
 }
 
-.site-nav a {
-  padding: 8px 0;
-  border-bottom: 2px solid transparent;
+.nav-item {
+  position: relative;
 }
 
-.site-nav a:hover {
+.nav-link {
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  padding: 8px 0;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-item.is-open .nav-link {
   color: var(--teal);
   border-color: var(--teal);
+}
+
+.nav-panel {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  z-index: 30;
+  display: grid;
+  gap: 2px;
+  min-width: 240px;
+  padding: 10px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 6px);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+  pointer-events: none;
+}
+
+.nav-item.is-open .nav-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+  pointer-events: auto;
+}
+
+.nav-panel a {
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav-panel a:hover {
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--teal);
 }
 
 .nav-toggle {
@@ -587,8 +640,41 @@ h3 {
     display: flex;
   }
 
-  .site-nav a {
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: left;
     padding: 12px 0;
+  }
+
+  .nav-link--plain {
+    display: block;
+  }
+
+  .nav-panel {
+    position: static;
+    display: none;
+    min-width: 0;
+    margin: 0 0 8px;
+    padding: 4px 0 4px 14px;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+    border-left: 2px solid var(--line);
+  }
+
+  .nav-item.is-open .nav-panel {
+    display: grid;
+  }
+
+  .nav-panel a {
+    padding: 10px 8px;
   }
 
   .hero {
